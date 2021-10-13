@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #262626ff;
+}
+div{
+	height: 200px;
+	width: 200px;
+	border: 15px solid coral;
+	border-radius: 50%;
+	border-bottom-color: transparent;
+	box-shadow: 1px 1px 60px coral;
+	cursor: pointer;
+	animation: anime 0.5s linear infinite;
+}
+@keyframes anime{
+	0%{
+		filter: hue-rotate(0deg);
+		transform: rotate(360deg);
+	}
+	 100%{
+	 	filter: hue-rotate(360deg);
+	 }
+}
